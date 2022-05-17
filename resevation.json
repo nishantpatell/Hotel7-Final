@@ -1,0 +1,24 @@
+{
+    "userdetails": [{
+    "first": "Jon",
+    "last": "Doe",
+    "email": "jondoe@gmail.com",
+    "phone": "(408)310-2365",
+    "checkin": "05/03/2022",
+    "checkout": "05/04/2022",
+    "adults": "2",
+    "children": "1",
+    "room": "1 King - $130"
+
+    }, {
+    "first": "Nicole",
+    "last": "Herb",
+    "email": "nicherb@gmail.com",
+    "phone": "(408)544-0161",
+    "checkin": "07/15/2022",
+    "checkout": "07/16/2022",
+    "adults": "2",
+    "children": "0",
+    "room": "1 Queen - $120"
+    }]
+    }

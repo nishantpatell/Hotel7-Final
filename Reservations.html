@@ -1,0 +1,109 @@
+<html>
+<head>
+  <title>Reservations</title>
+  <link rel="stylesheet" type="text/css" href="reservations.css">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <script src="main.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Header 1-->
+  <div class="navBar">
+    <a style="margin-right: auto;" href="Hotel.html">HOME</a>
+    <a href="Rooms.html">ROOMS</a>
+    <a href="Reservations.html">RESERVATIONS</a>
+    <a href="Dining&Map.html">DINING & MAP</a>
+    <a href="FAQ.html">FAQs</a>
+  </div>
+  
+  
+  <div class="container-fluid">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="first" class="form-label">First Name:</label>
+        <input type="text" class="form-control" name="first" id="first" placeholder="John">
+      </div>
+      <div class="col-md-6">
+        <label for="last" class="form-label">Last Name:</label>
+        <input type="text" class="form-control" name="last" id="last" placeholder="Doe">
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="johndoe@gmail.com">
+      </div>
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Phone:</label>
+        <input type="text" class="form-control" name="phone" id="phone" placeholder="XXXXXXXXXX">
+      </div>
+      <div class="col-md-6">
+        <label for="checkin" class="form-label">Check In:</label> 
+        <input type="date" name="checkin" id="checkin" class="form-control" placeholder="MM/DD/YYYY"> 
+      </div>
+      <div class="col-md-6">
+        <label for="checkout" clsass="form-label">Check Out:</label> 
+        <input type="date" name="checkout" id="checkout" class="form-control" placeholder="MM/DD/YYYY"> 
+      </div>
+      <div class="col-md-4">
+        <label for="room" class="form-label">Bedroom:</label>
+        <select name="roomm" id="room" class="form-control">
+          <option value="King">King Bedroom - $130</option>
+          <option value="Queen">Queen Bedroom - $120</option>
+          <option value="Twoqueen">Two Queen Bedroom - $140</option>
+          <option value="Queen_handicap"> Queen Bedroom (Handicap Friendly) - $120</option>
+          <option value="Twoqueen_handicap">Two Queen Bedroom (Handicap Friendly) - $140</option>
+        </select> 
+      </div>
+      <div class="col-md-4">
+        <label for="adults" class="form-label">Adults:</label> 
+        <input type="text" name="adults" id="adults" class="form-control" placeholder="X"> 
+      </div>
+      <div class="col-md-4">
+        <label for="children" class="form-label">Children:</label> 
+        <input type="text" name="children" id="children" class="form-control" placeholder="X"> 
+      </div>
+      <div class="col-12 mt-2">
+        <input type="submit" class="btn btn-primary" onclick="alert('Room Confirmed');send()" value="Confirm">
+      </div>
+    </form>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="padding-left: 10%; padding-right: 10%;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="single_king.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="single_queen.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="double_queen.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="single_access.jpg" class="d-block w-100" alt="...">
+      </div>
+        <div class="carousel-item">
+          <img src="double_access.jpg" class="d-block w-100" alt="...">
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js">
+  </script>
+  <script src="reservation.js"></script>
+
+
+
+</body>
